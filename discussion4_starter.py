@@ -7,6 +7,9 @@ class Rectangle():
 
     # YOUR CODE HERE
 
+    def __init__(self,width,height):
+        self.width=width
+        self.height=height
 
 
     # Create the "__str__" method
@@ -16,16 +19,19 @@ class Rectangle():
 
     # YOUR CODE HERE
 
-
+    def __str__(self,width,height):
+        return "A rectangle with width "+str(self.width)+"and height "+str(self.height)
 
     # Create the "verify_input" method
-    #
+
     # It returns a boolean
     #       True if the width and height are positive numbers
     #       False otherwise
 
     # YOUR CODE HERE
 
+    def verify_input(self,width,height):
+        return self.width>0 and self.height>0
 
 
     # Create the "area" method
