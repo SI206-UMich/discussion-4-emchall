@@ -11,7 +11,6 @@ class Rectangle():
         self.width=width
         self.height=height
 
-
     # Create the "__str__" method
     #
     # It returns a string, 
@@ -40,6 +39,10 @@ class Rectangle():
     # Otherwise, it returns the area of the rectangle.
 
     # YOUR CODE HERE
+    def area(self,width,height):
+        verify_input(self.width,self.height)
+        area=self.width*self.height
+        return area
 
 
 
