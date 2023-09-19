@@ -41,8 +41,8 @@ class Rectangle():
     # YOUR CODE HERE
     def area(self,width,height):
         verify_input(self.width,self.height)
-        area=self.width*self.height
-        return area
+        a=self.width*self.height
+        return a
 
 
     # Create the "perimeter" method
@@ -54,6 +54,8 @@ class Rectangle():
     
 def perimeter(self,width,height):
     verify_input(self.width,self.height)
+    p=self.width*2+self.height*2
+    return p
 
 def main():
     r = Rectangle(10, 10)
